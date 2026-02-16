@@ -6,7 +6,7 @@ public class BankAccount {
     private String ownerName;
     private double balance;
 
-    // Конструктор з номером рахунку
+   
     public BankAccount(String accountNumber, String ownerName, double balance) {
         this.accountNumber = accountNumber;
         setOwnerName(ownerName);
@@ -18,7 +18,7 @@ public class BankAccount {
         }
     }
 
-    // Конструктор без номера рахунку
+   
     public BankAccount(String ownerName, double balance) {
         this.accountNumber = generateAccountNumber();
         setOwnerName(ownerName);
@@ -51,7 +51,6 @@ public class BankAccount {
             this.ownerName = newOwnerName;
         } else {
             System.out.println("Ім'я власника має містити щонайменше 3 символи.");
-            // Якщо ownerName ще null (при створенні), встановлюємо значення за замовчуванням
             if (this.ownerName == null) {
                 this.ownerName = "Невідомий";
             }
