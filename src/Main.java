@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Створюємо рахунки (виправлено "Оа" на "Олександр")
         BankAccount account = new BankAccount("Олександр", 1000.5);
         BankAccount account1 = new BankAccount("Андрій", 50000.5);
         BankAccount account2 = new BankAccount("Богдан", 20000.5);
@@ -10,7 +9,6 @@ public class Main {
         BankAccount account4 = new BankAccount("Василь", 2000.5);
         BankAccount account5 = new BankAccount("Лілія", 15000.0);
 
-        // Створюємо масив усіх рахунків
         BankAccount[] accounts = new BankAccount[]{
                 account, account1, account2, account3, account4, account5
         };
